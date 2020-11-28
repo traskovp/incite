@@ -8,6 +8,12 @@
     .container{
         width: 960px;
     }
+    .nav-mob{
+        display: none !important;
+    }
+    .nav-inner{
+        display: flex !important;
+    }
 }
 @media (min-width: 1280px){
     .container{

@@ -1,5 +1,3 @@
-
-header
 .hero
     padding-top: 2%
     background: url('../img/main-background.jpg') no-repeat
@@ -42,6 +40,8 @@ header
         margin-right: 20px
         +medium
 .nav
+    &-mob
+        display: block
     &__list 
         display: flex
         justify-content: center
@@ -64,18 +64,42 @@ header
     &__link:hover
         color: #09BAB4
         background-size: 100% 2px
+    // Десткоп
+    &-i
+        width: 70%
+        +medium
+    &-inner
+        display: none
+        list-style-type: none
+        justify-content: space-between
+        align-items: center
+    &-button
+        width: 240px
+        height: 47px
+        text-transform: uppercase
+        border: none
+        border-radius: 20px
+        color: #fff
+        background: #09BAB4
+        transition: 0.2s 
+        &:hover
+            background: #4bb2af
+    &-item
+        font-size: 19px
+    &-link
+        text-decoration: none
+        color: #000
+        background-image: linear-gradient(#F96714, #F96714)
+        background-position: 0% 100%
+        background-repeat: no-repeat
+        background-size: 0% 2px
+        transition: background-size .3s
+    &-link:hover
+        color: #09BAB4
+        background-size: 100% 2px
 
-    
-
-
-        
 .mb
     margin-bottom: 8px
-
-.dot
-    color: #09BAB4
-.virgule
-    color: #F96714
 .offer
     &__title
         font-size: 50px
@@ -85,8 +109,7 @@ header
         +thin
     &__subtitle
         display: flex
-        align-items: center
-        
+        align-items: center    
 .subtitle
     &__line
         display: flex

@@ -1,35 +1,16 @@
 // Index
-@media (max-width: 1440px){
+@media (min-width: 1280px){
     .container{
-        max-width: 1280px;
-    }
-    .hero__image{
-        margin-top: -15%;
-    }
-    .card-image{
-        width: 265px;
-    }
-    .footer{
-        height: 300px;
+        width: 1220px;
     }
 }
-@media (max-width: 1200px){
+@media (min-width: 1024px){
     .container{
-        max-width: 1080px;
+        width: 960px;
     }
-    .hero-people{
-        width: 440px;
-    }
-    .card__name{
-        font-size: 20px;
-    }
-    .card__description{
-        font-size: 13px;
-    }
-    .card-image{
-        width: 265px;
-    }
-    .footer{
-        height: 280px;
+}
+@media (min-width: 768px){
+    .container{
+        width: 720px;
     }
 }

@@ -1,0 +1,37 @@
+.info
+    &__block
+        display: flex
+        align-items: center
+        justify-content: center
+    &__title
+        font-size: 40px
+        color: #333333
+        text-align: center
+        +semibold
+        &::before
+            content: ""
+            background-color: #09BAB4
+            height: 8px
+            width: 450px
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 15px
+        &::after
+            content: ""
+            background-color: #FA8543
+            height: 8px
+            width: 450px
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-top: 15px
+    &__subtitle
+        display: block
+        text-align: center
+        letter-spacing: 0.015em
+        font-size: 20px
+        line-height: 150%
+        margin-bottom: 70px
+        +light
+

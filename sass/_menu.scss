@@ -1,0 +1,106 @@
+// position: left or right
+// width: unit px
+// backgroundColor
+// duration: unit ms
+$elastic: (
+  position: right,
+  width: 1000,
+  backgroundColor: #ffffff94,
+  duration: 500,
+);
+
+
+// get key
+$position: map-get($elastic, 'position');
+$width: map-get($elastic, 'width');
+$backgroundColor: map-get($elastic, 'backgroundColor');
+$duration: map-get($elastic, 'duration');
+// css button
+
+
+// Start
+.navigation {
+  position: fixed;
+  width: $width*1px;
+  height: 100%;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+  
+  transition-delay: $duration*1ms;
+  @if ($position == right) {
+    right: 0;
+  } @else if ($position == left) {
+    left: 0;
+  }
+  
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navigation__inner {
+      background-color: $backgroundColor;
+      transform: translate(0, 0);
+      transition: transform 700ms cubic-bezier(1, 0.07, 0.58, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:after {
+        width: 300%;
+        animation: elastic ($duration/2)*1ms ease ($duration+0.5)*1ms both;
+      }
+    }
+  }
+}
+.navigation__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 999999;
+  @if ($position == right) {
+    transform: translate(100%, 0);
+  } @else if ($position == left) {
+    transform: translate(-100%, 0);
+  }
+  transition: transform $duration*1ms linear, background-color 0s linear $duration*1ms;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    @if ($position == right) {
+      left: 0;
+    } @else if ($position == left) {
+      right: 0;
+    }
+    background-color: $backgroundColor;
+    
+    z-index: -1;
+    transition: all $duration*1ms linear;
+    
+  }
+}
+
+
+  
+
+
+
+.body-overflow {
+    overflow: hidden;
+    height: 100vh;
+    width: auto;
+}

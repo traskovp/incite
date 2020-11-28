@@ -1,0 +1,23 @@
+.contacts
+    padding: 0 0 32%
+    &__columns
+        display: flex
+        justify-content: space-evenly
+        & p
+            margin: 0 0 40px
+            +medium
+            font-size: 26px
+        & p a
+            text-decoration: none
+            color: #000
+    & .col:nth-child(1) p
+        +light
+    &__title
+        text-transform: uppercase
+        +semibold
+        font-size: 50px
+        text-align: center
+        margin-bottom: 8%
+.col
+    width: 50%
+    max-width: 500px;

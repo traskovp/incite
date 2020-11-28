@@ -1,0 +1,108 @@
+
+header
+.hero
+    padding-top: 2%
+    background: url('../img/main-background.jpg') no-repeat
+    background-size: contain
+    &__logo
+        width: 123px
+    &__menu
+        display: flex
+        justify-content: flex-end
+        z-index: 1001010101
+    &__navbar
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__image
+        display: flex
+        justify-content: flex-end
+        margin-top: -18%
+.menu
+    &__button
+        display: flex
+        flex-direction: column
+        justify-content: center
+        border: none
+        background: none
+        outline: none
+    &__line
+        content: ""
+        display: inline-block
+        height: 3px
+        width: 40px
+        background-color: #09BAB4
+        border-radius: 7px
+        align-items: center
+    &__text
+        font-size: 15px
+        color: #000
+        display: flex
+        align-items: center
+        margin-right: 20px
+        +medium
+.nav
+    &__list 
+        display: flex
+        justify-content: center
+        flex-direction: column
+        +light
+        list-style-type: none
+        text-align: center
+    &__item
+        margin-bottom: 7px
+        font-size: 40px
+    &__link
+        text-decoration: none
+        color: #000
+        background-image: linear-gradient(#F96714, #F96714)
+        background-position: 0% 100%
+        background-repeat: no-repeat
+        background-size: 0% 2px
+        transition: background-size .3s
+        margin-bottom: 20px
+    &__link:hover
+        color: #09BAB4
+        background-size: 100% 2px
+
+    
+
+
+        
+.mb
+    margin-bottom: 8px
+
+.dot
+    color: #09BAB4
+.virgule
+    color: #F96714
+.offer
+    &__title
+        font-size: 50px
+        letter-spacing: 0.015em
+        padding-top: 12%
+        line-height: 130%
+        +thin
+    &__subtitle
+        display: flex
+        align-items: center
+        
+.subtitle
+    &__line
+        display: flex
+        align-items: flex-start
+    &__line__orange
+        content: ""
+        height: 5px
+        width: 74px
+        background-color: #F96714
+    &__line__blue
+        content: ""
+        height: 5px
+        width: 74px
+        background-color: #09BAB4
+    &__text
+        font-size: 25px
+        margin-left: 33px
+        line-height: 150%
+        +light

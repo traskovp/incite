@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
+	<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
+	<meta name="author" content="Codrops" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon.png">
+    <title>Incite</title>
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="body">
+    <header>
+        <div class="hero">
+            <div class="hero__approach">
+                <div class="container">
+                    <div class="hero__navbar">
+                        <a href="/">
+                            <img src="./img/logo.svg" alt="Insite" class="hero__logo">
+                        </a>
+                        <div id="nav" class="navigation">
+                            <div class="navigation__inner">
+                            <ul class="nav__list">
+                                <a href="#" class="nav__link">
+                                    <li class="nav__item">
+                                        О Студии
+                                    </li>
+                                </a>
+                                <a href="/approach.html" class="nav__link">
+                                    <li class="nav__item">
+                                        Подход
+                                    </li>
+                                </a>
+                                <a href="/portfolio.html" class="nav__link">
+                                    <li class="nav__item">
+                                        Портфолио
+                                    </li>
+                                </a>
+                                <a href="/contacts.html" class="nav__link">  
+                                    <li class="nav__item">
+                                        Контакты
+                                    </li>
+                                </a>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="hero__menu">   
+                            <div class="menu__text">МЕНЮ</div>
+                            <button id="show-menu" class="menu__button">
+                                <svg class="ham ham3" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                                    <path
+                                        class="line top"
+                                        d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
+                                    <path
+                                        class="line middle"
+                                        d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
+                                    <path
+                                        class="line bottom"
+                                        d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
+                                </svg>         
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="entry">
+                            <img src="./img/approach.svg" alt="Подход" class="entry__approach">
+                            <img src="./img/su.png" alt="">
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </header>
+        <div class="steps">
+            <div class="container">
+                <div class="steps__block__odd">
+                    <img src="./img/first.png" alt="01" class="steps__odd">
+                    <div class="steps__text__odd">
+                        <h2 class="steps__title__odd">
+                            ИССЛЕДОВАНИЕ
+                        </h2>
+                        <p class="steps__subtitle__odd">
+                            Создание и продвижение сайта<span class="virgule">,</span><br>разработка начинаются с исследования.
+                            <br>Конкуренты<span class="virgule">,</span>юзабилити сайта<span class="virgule">,</span>
+                            аналитика<br>сайта <span class="virgule">-</span> основа будющей работы<span class="virgule">.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="steps__block__even">
+                    <div class="step__text__even">
+                        <h2 class="steps__title__even">
+                            КОНЦЕПЦИЯ
+                        </h2> 
+                        <p class="steps__subtitle__even">
+                            Постановка продуманных этапов<br>создания<span class="virgule">,</span> 
+                            развития<span class="virgule">,</span> продвижения<br>
+                            сайтов<span class="virgule">.</span> Создание прототипа<br>дизайна сайта и функционала 
+                            в<br>общем тандеме<span class="virgule">.</span>
+                        </p>
+                    </div>
+                    <img src="./img/second.png" alt="02" class="steps__even">
+                </div>
+                <div class="steps__block__odd">
+                    <img src="./img/third.png" alt="03" class="steps__odd">
+                    <div class="steps__text__odd">
+                        <h2 class="steps__title__odd">
+                            ПРОЕКТИРОВАНИЕ
+                        </h2> 
+                        <p class="steps__subtitle__odd">
+                            Производим разработку<br>архитектуры сайта<span class="virgule">,</span> прототипа<br>
+                            сценария<span class="virgule">,</span> отработка его на<br>практике<span class="virgule">.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="steps__block__even">
+                    <div class="steps__text__even">
+                        <h2 class="steps__title__even">
+                            ДИЗАЙН
+                        </h2> 
+                        <p class="steps__subtitle__even">
+                            Воплощение ярких идей с <br>широкой панелью возможностей <span class="virgule">-</span><br>от классики
+                            до самых смелых<br>решений<span class="virgule">!</span> Разработка стилей<br>с использованием
+                            самых современных стандартов графики<span class="virgule">.</span>
+                        </p>
+                    </div>
+                    <img src="./img/fourth.png" alt="04" class="steps__even" >
+                </div>
+                <div class="steps__block__odd">
+                    <img src="./img/fifth.png" alt="05" class="steps__odd">
+                    <div class="steps__text__odd">
+                        <h2 class="steps__title__odd">
+                            ПРОГРАММИРОВАНИЕ
+                        </h2> 
+                        <p class="steps__subtitle__odd">
+                            Разработка адаптивной верстки с<br>качественно работающим 
+                            <br>функционалом<span class="virgule">.</span>
+                            Синхронизация с<br>необходимыми сервисами<span class="virgule">.</span><br>Сжатые сроки 
+                            <span class="virgule">-</span> наше 
+                            преимущество<span class="virgule">!</span>
+                        </p>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        <div class="container">
+            <div class="steps__result">
+                <div class="result__text">
+                    <h2 class="steps__result__title">
+                        Запуск!
+                    </h2>
+                    <p class="steps__result__text">
+                        Поздравляем<span class="virgule">,</span> сайт<br>начал приностить<br>прибыль<span class="virgule">.</span>
+                    </p>
+                </div>
+                <img src="./img/rocket.png" class="result__rocket" alt="">
+            </div>
+            
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__link">
+                    <a href="mailto:hello@incite.by" class="footer__link">
+                        hello@incite<span class="dot">.</span>by
+                    </a>
+                </div>
+                <div class="footer__number">
+                    <a href="tel:+375333854917" class="footer__number">
+                        +375 (33) 385-49-17
+                    </a>
+                </div>
+                <div class="footer__network">
+                    <a href="#"><img src="./img/Telegram.svg" alt="Telegram" class="footer__soc-img"></a>
+                    <a href="#"><img src="./img/Vk.svg" alt="Vk" class="footer__soc-img"></a>
+                    <a href="#"><img src="./img/Instagram.svg" alt="Instagram" class="footer__soc-img"></a>
+                    <a href="#"><img src="./img/Behance.svg" alt="Behance" class="footer__soc-img"></a>
+                    <a href="#"><img src="./img/Facebook.svg" alt="Facebook" class="footer__soc-img"></a>
+                    <a href="#"><img src="./img/Twitter.svg" alt="Twitter" class="footer_tw"></a>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="line__orange"></div>
+            <div class="line__blue"></div>
+        </div>
+    </footer>
+    <script src="/js/rellax.min.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

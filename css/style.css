@@ -128,9 +128,9 @@ body {
   width: auto;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .container {
-    width: 1220px;
+    width: 720px;
   }
 }
 
@@ -140,9 +140,9 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .container {
-    width: 720px;
+    width: 1220px;
   }
 }
 

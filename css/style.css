@@ -188,6 +188,10 @@ body {
   margin-top: -18%;
 }
 
+.hero-line {
+  display: flex;
+}
+
 .menu__button {
   display: flex;
   flex-direction: column;
@@ -303,9 +307,9 @@ body {
 .offer__title {
   font-size: 50px;
   letter-spacing: 0.015em;
-  padding-top: 12%;
-  line-height: 130%;
-  font-family: 'Montserrat Thin',sans-serif;
+  font-family: 'Montserrat Semibold',sans-serif;
+  width: 61%;
+  padding-top: 5%;
 }
 
 .offer__subtitle {

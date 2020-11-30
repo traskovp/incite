@@ -45,6 +45,11 @@
   font-style: normal;
 }
 
+*::selection {
+  color: #fff;
+  background: #09BAB4;
+}
+
 a:hover {
   opacity: 0.5;
   transition: all 0.3s;
@@ -164,6 +169,13 @@ body {
   padding-top: 2%;
   background: url("../img/background/main-background.jpg") no-repeat;
   background-size: 100% auto;
+}
+
+.hero-c {
+  transform: rotate(-90deg);
+  display: inline-flex;
+  font-size: 45px;
+  font-family: 'Montserrat Thin',sans-serif;
 }
 
 .hero__logo {
@@ -308,7 +320,7 @@ body {
 .offer__title {
   font-size: 50px;
   letter-spacing: 0.015em;
-  font-family: 'Montserrat Light',sans-serif;
+  font-family: 'Montserrat Thin',sans-serif;
   width: 61%;
   padding-top: 5%;
 }

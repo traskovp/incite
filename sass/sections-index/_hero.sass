@@ -2,6 +2,11 @@
     padding-top: 2%
     background: url('../img/background/main-background.jpg') no-repeat
     background-size: 100% auto
+    &-c
+        transform: rotate(-90deg)
+        display: inline-flex
+        font-size: 45px
+        +thin
     &__logo
         width: 123px
     &__menu
@@ -55,6 +60,7 @@
     &__item
         margin-bottom: 7px
         font-size: 40px
+        
     &__link
         text-decoration: none
         color: #000
@@ -107,7 +113,7 @@
     &__title
         font-size: 50px
         letter-spacing: 0.015em
-        +light
+        +thin
         width: 61%
         padding-top: 5%
     &__subtitle

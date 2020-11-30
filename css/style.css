@@ -47,7 +47,7 @@
 
 a:hover {
   opacity: 0.5;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .dot {
@@ -163,7 +163,7 @@ body {
 .hero {
   padding-top: 2%;
   background: url("../img/background/main-background.jpg") no-repeat;
-  background-size: auto;
+  background-size: 100% auto;
 }
 
 .hero__logo {

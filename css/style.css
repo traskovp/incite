@@ -182,14 +182,15 @@ body {
   align-items: center;
 }
 
-.hero__image {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -18%;
+.hero__img {
+  width: 32%;
 }
 
-.hero-line {
+.hero__offer {
   display: flex;
+  justify-content: space-between;
+  padding: 5% 0;
+  align-items: center;
 }
 
 .menu__button {
@@ -307,7 +308,7 @@ body {
 .offer__title {
   font-size: 50px;
   letter-spacing: 0.015em;
-  font-family: 'Montserrat Semibold',sans-serif;
+  font-family: 'Montserrat Light',sans-serif;
   width: 61%;
   padding-top: 5%;
 }

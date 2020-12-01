@@ -450,6 +450,7 @@ body {
   font-family: 'Montserrat Light',sans-serif;
 }
 
+<<<<<<< HEAD
 .info__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,23 +461,40 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+.services__headings {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 25px;
+>>>>>>> e82fe70c57692615ae4ba6d97841f60f9db480d1
 }
 
-.info__title {
-  font-size: 40px;
+.services__title {
+  font-size: 36px;
   color: #333333;
-  text-align: center;
-  font-family: 'Montserrat Semibold',sans-serif;
+  text-align: left;
+  font-family: 'Montserrat Light',sans-serif;
+  margin-top: 10px;
 }
 
-.info__subtitle {
-  display: block;
-  text-align: center;
-  letter-spacing: 0.015em;
-  font-size: 20px;
-  line-height: 150%;
-  margin-bottom: 70px;
-  font-family: 'Montserrat Light',sans-serif;
+.services__line {
+  display: flex;
+  align-items: flex-start;
+}
+
+.services__line__orange {
+  content: "";
+  height: 5px;
+  width: 74px;
+  background-color: #F96714;
+}
+
+.services__line__blue {
+  content: "";
+  height: 5px;
+  width: 74px;
+  background-color: #09BAB4;
 }
 
 .contact__block {

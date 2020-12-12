@@ -4,12 +4,26 @@
         justify-content: flex-start
         flex-direction: column
         margin-top: 25px
+    &__choice
+        padding: 0
+        display: grid
+        margin-bottom: 35px
+        grid-template-columns: repeat(3, 1fr)
+    &__сategory
+        grid-column: 1
+    &__products
+        grid-column: 2
+    &__item
+        grid-column: 3
     &__title
         font-size: 36px
         color: #333333
         text-align: left
         +light
-        margin-top: 10px
+        margin: 10px 0 30px 0
+    &__desc
+        +light
+        margin: 0 0 30px 20px
     &__line
         display: flex
         align-items: flex-start
@@ -23,5 +37,95 @@
         height: 5px
         width: 74px
         background-color: #09BAB4
+    &__card
+        width: 100%
+        height: 100%
+        margin: 0
+        box-sizing: border-box
+        padding: 6%
+        background: #09BAB4
+        border-radius: 15px
+        &-headings
+            display: flex
+        &-img   
+            width: 125px
+        &-title
+            color: #fff
+            font-size: 19px
+            margin: 15px 0 0 0
+            +bold
+        &-line__orange
+            content: ""
+            height: 2px
+            margin-top: 4px
+            width: 74px
+            background-color: #F96714
+        &-text *
+            margin: 0 0 16px 0
+        &-term
+            +semibold
+            color: #fff
+            margin-top: 15px
+        &-price
+            +semibold
+            color: #fff
+        &-desc
+            +light
+            color: #fff
+        &-btn
+            color: #fff
+            text-decoration: none
+            background-color: #f96714
+            border: 3px solid #f96714
+            width: 70%
+            height: 50px
+            margin: 0
+            +semibold
+            outline: none
+            transition: .3s all ease-in-out
+            border-radius: 15px
+            z-index: 0
+            &:hover
+                background: #f55900
+                transform: scale(1.05)
+
+.category-item
+    width: 90%
+    background: #fff
+    border: 2px solid #09BAB4
+    margin-bottom: 35px
+    padding: 8%
+    color: #09BAB4
+    display: flex
+    justify-content: space-between
+    cursor: pointer
+    align-items: center
+    border-radius: 15px
+    transition: .3s all ease-in-out
+    &__img
+        fill: #09BAB4
+    &:hover
+        transform: scale(1.05)
+    &:nth-child(4n) 
+        margin-bottom: 0
+   
+.active-element
+    background: #09BAB4
+    color: #fff
+    & > .category-item__img
+        fill: #fff
+
+  
+  
+#products .category-item, 
+#card .services__card 
+    display: none
+    transition: .3s all ease-in-out
 
 
+#products .category-item.visible
+    display: flex
+
+#card .services__card.visible
+    display: block
+    transition: 0.3s ease-in-out

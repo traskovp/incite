@@ -9,13 +9,13 @@
 }
 
 @font-face {
-font-family: 'Montserrat Medium';
-src: url('../fonts/Montserrat-Medium.eot');
-src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-url('../fonts/Montserrat-Medium.woff') format('woff'),
-url('../fonts/Montserrat-Medium.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
+    font-family: 'Montserrat Medium';
+    src: url('../fonts/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Medium.woff') format('woff'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -48,14 +48,14 @@ font-style: normal;
     font-style: normal;
 }
 
-@mixin medium {
-    font-family: 'Montserrat Medium',sans-serif;
+@mixin thin {
+    font-family: 'Montserrat Thin',sans-serif;
 }
 @mixin light {
     font-family: 'Montserrat Light',sans-serif;
 }
-@mixin thin {
-    font-family: 'Montserrat Thin',sans-serif;
+@mixin medium {
+    font-family: 'Montserrat Medium',sans-serif;
 }
 @mixin bold {
     font-family: 'Montserrat Bold',sans-serif;

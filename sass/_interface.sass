@@ -1,19 +1,36 @@
-*::selection
-    color: #fff /* Цвет текста */
-    background: #09BAB4 /* Цвет фона */
+*
+    outline: none
+    box-sizing: border-box
+    &::selection
+        color: #fff /* Цвет текста */
+        background: #09BAB4 /* Цвет фона */
    
-a:hover
-    opacity: 0.5
-    transition: all 0.3s
-
+a
+    transition: all 0.3s ease-in-out
+    &:hover:not(.nav-link):not(.callback__link):not(.about-us__btn)
+        opacity: 0.5
+    
+button
+    outline: none
+    transition: .3s all ease-in-out
+    &:hover
+        transform: scale(1.05)
 .dot
     color: #09BAB4
 .virgule
     color: #F96714
-    
-body   
-    margin: 0
-    padding: 
-
 .purple
     color: #B0CAE8
+
+.nowrap 
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+body   
+    margin: 0
+    padding: 0
+
+.hide
+    display: none
+
+

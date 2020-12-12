@@ -104,13 +104,13 @@
                    <div class="contacts__columns">
                         <div class="col">
                             <p class="contacts__privet">
-                                Привет<span class="dot">!</span><br>Можешь написать или позвонить нам<span class="virgule">,</span> чтобы просто поговорить<span class="virgule">,</span> а ещё лучше можешь заказать у нас сайт<span class="dot">:</span><span class="virgule">)</span>
+                                Привет<span class="dot">!</span><br>Можешь написать или позвонить нам<span class="virgule">,</span> чтобы просто поговорить<span class="virgule">,</span> а ещё лучше можешь заказать у нас сайт <span class="dot">:</span><span class="virgule">)</span>
                             </p> 
                         </div>
                         <div class="col">
                             <p>
                                 <a href="mailto:hello@incite.by">
-                                    hello@incite<span class="dot">.</span>by
+                                    hello<span class="purple">@</span>incite<span class="dot">.</span>by
 
                                 </a>
                             </p>
@@ -134,7 +134,48 @@
             </div>  
         </div>
     </header>
-    
+    <div class="callback" id="callBack">
+        <div class="container">
+            <div class="callback__line">
+                <div class="callback__line__orange"></div>
+                <div class="callback__line__blue"></div>
+            </div>
+            <h2 class="callback__title">
+                Связаться с нами
+            </h2>
+            <div class="callback__row">
+                <div class="callback__text">
+                    <p class="callback__desc">
+                        Если у Вас уже есть сформулированные требования к разработке и<span class="dot">/</span>или продвижению сайта<span class="virgule">,</span> заполните форму справа и прикрепите файл к письму или напишите нам на e-mail на <a href="mailto:hello@incite.by " class="callback__link">hello@incite.by</a><span class="dot">.</span>
+                    </p>
+                    <p class="callback__desc">
+                        Если у Вас нет сформированных пожеланий<span class="virgule">,</span> то скачайте и заполните <a href="#" class="callback__link">бриф</a><span class="virgule">,</span> а затем прикрепите его к электронному письму на <a href="mailto:hello@incite.by" class="callback__link">hello@incite.by</a> или к форме заявки на сайте<span class="dot">.</span> 
+                    </p>
+                    <p class="callback__desc">
+                        За консультацией по созданию сайтов Вы можете обратиться по телефону: <br>
+                        <a href="tel:+375333854917" class="callback__link">
+                            <span class="purple">+</span>375 (33) 385<span class="purple">-</span>49<span class="purple">-</span>17
+                        </a>
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="sender.php" method="post">
+                        <div class="form-data">
+                            <input type="text" name="name" autocomplete="off" placeholder="Ваше имя" class="form__name form-input"> 
+                            <input type="text" name="surname" autocomplete="off" placeholder="Ваша фамилия" class="form__surname form-input">
+                        </div>
+                        <div class="form-data">
+                            <input type="text" name="phone" autocomplete="off" placeholder="Номер телефона" class="form__phone form-input">
+                            <input type="text" name="email" autocomplete="off" placeholder="E-mail" class="form__email form-input">
+                        </div>
+                        <input type="text" name="company" autocomplete="off" placeholder="Компания" class="form__company form-input">
+                        <textarea type="text" name="message" autocomplete="off" placeholder="Текст сообщения" class="form__message form-input"></textarea>
+                        <button type="submit" class="form__button">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> 
     <script src="/js/rellax.min.js"></script>
     <script src="./js/menu.js"></script>
 </body>

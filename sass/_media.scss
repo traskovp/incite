@@ -4,6 +4,11 @@
         width: 720px;
     }
 }
+@media (max-width: 1024px){
+    .nav-i{
+        display: none !important;
+    }
+}
 @media (min-width: 1024px){
     .container{
         width: 960px;
